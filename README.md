@@ -1,4 +1,6 @@
 .bashrc
 =======
 
-Terminal is where I hang out 
+Writing some bash script to make better use of terminal.
+
+
