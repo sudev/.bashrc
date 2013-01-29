@@ -7,8 +7,15 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-alias ls='ls --color=auto'
+#Linking other files
+source $HOME/.bashrcfiles/inputrc
+
 PS1='[\u@\h \W]\$ '
+
+###Auto completion into while entering the path 
+#this command will allow you to do the same
+shopt -s autocd
+
 
 #update .vimrc for changes to made for vim editor
 ##############################################################################################################
@@ -16,6 +23,8 @@ PS1='[\u@\h \W]\$ '
 ##############################################################################################################
 # section alias to be exported as another file asap 
 
+alias ls='ls --color=auto'
+PS1='[\u@\h \W]\$ '
 #alias search display 
 alias showalias='cat ~/.bashrc'
 alias searchalias='cat ~/.bashrc | grep'

@@ -1,0 +1,5 @@
+#Author Sudev Ambadi 
+#The best way to make use of up /down arrows 
+#this is just like some ajyax search 
+bind '"\e[A": history-search-backward'
+bind '"\e[B": history-search-forward'
