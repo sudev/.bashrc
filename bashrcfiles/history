@@ -1,0 +1,7 @@
+#Increase History size 
+export HISTFILESIZE=10000
+export HISTSIZE=10000
+
+#avoid same commands in history and whitespaces 
+#usually done with ignoredups and ignorespace 
+export HISTCONTROL=ignoreboth

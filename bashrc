@@ -9,6 +9,7 @@
 
 #Linking other files
 source $HOME/.bashrcfiles/inputrc
+source $HOME/.bashrcfiles/history
 
 PS1='[\u@\h \W]\$ '
 
