@@ -1,5 +1,5 @@
 #Increase History size 
-export HISTFILESIZE=10000
+export HISTFILESIZE=10000000
 export HISTSIZE=10000
 
 #avoid same commands in history and whitespaces 
