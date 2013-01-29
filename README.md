@@ -16,7 +16,9 @@ Writing some bash script to make better use of terminal.
 
 >http://www.novell.com/coolsolutions/tools/17142.html
 
-Note : If you are trying to implement this in your terminal make sure that you rename bashrc file to .bashrc and rename the folder bashrcfiles into .bashrcfiles and copy both these files into your home folder.
+Note :> If you are trying to implement this in your terminal make sure that you rename bashrc file to .bashrc and rename the folder bashrcfiles into .bashrcfiles and copy both these files into your home folder.
 
+> Source your new bashrc using the command (make them in eefect )
+>>source ~/.bashrc
 Thanks
 
