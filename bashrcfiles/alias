@@ -1,0 +1,20 @@
+alias ls='ls --color=auto'
+#alias search display 
+alias showalias='cat ~/.bashrc'
+alias searchalias='cat ~/.bashrc | grep'
+
+#list ls
+alias la='ls -a'
+alias ll='ls -l'
+
+#battery_BAT0
+alias bat='upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep -E "state|time|per"'
+alias batfull='upower -i /org/freedesktop/Upower/devices/battery_BAT0'
+
+###package manager
+#install form server 
+alias install='sudo pacman -S'
+#install from file 
+alias installfile='sudo pacman -U'
+#search for packages 
+alias searchpac='sudo pacman -Ss'i
