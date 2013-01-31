@@ -13,10 +13,10 @@ source $HOME/.bashrcfiles/alias
 source $HOME/.bashrcfiles/history
 source $HOME/.bashrcfiles/functions
 
-PS1='[\u@\h \W]\$ '
+#PS1='[\u@\h \W]\$ '
 
 ###Auto complete cd  into while entering the path 
 shopt -s autocd
 
 #update .vimrc for changes to made for vim editor
-PS1='[\u@\h \W]\$ '
+PS1='\[\033[0;32m\]\A \[\033[0;31m\]\u\[\033[0;34m\]@\[\033[0;35m\]\h\[\033[0;34m\]:\[\033[00;36m\]\W\[\033[0;33m\] $\[\033[0m\] '
