@@ -1,7 +1,8 @@
+#Author Sudev Ambadi 
 alias ls='ls --color=auto'
 #alias search display 
-alias showalias='cat ~/.bashrc'
-alias searchalias='cat ~/.bashrc | grep'
+alias showalias='cat ~/.bashrcfiles/alias'
+alias searchalias='cat ~/.bashrcfiles/alias | grep'
 
 #list ls
 alias la='ls -a'
@@ -17,4 +18,11 @@ alias install='sudo pacman -S'
 #install from file 
 alias installfile='sudo pacman -U'
 #search for packages 
-alias searchpac='sudo pacman -Ss'i
+alias searchpac='sudo pacman -Ss'
+
+##Network 
+alias ping8='ping 8.8.8.8'
+alias pingg='ping google.com'
+
+
+
