@@ -11,6 +11,7 @@
 source $HOME/.bashrcfiles/inputrc
 source $HOME/.bashrcfiles/alias
 source $HOME/.bashrcfiles/history
+source $HOME/.bashrcfiles/functions
 
 PS1='[\u@\h \W]\$ '
 
