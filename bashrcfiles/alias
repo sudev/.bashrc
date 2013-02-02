@@ -27,9 +27,9 @@ alias ping8='ping 8.8.8.8'
 alias pingg='ping google.com'
 
 ##ssh alias 
-sshcloud='ssh root@192.168.41.203'
-sshathena='ssh sudev_bcs10@192.168.40.99'
-sshfoss='ssh webuser@192.168.41.170'
+alias shcloud='ssh root@192.168.41.203'
+alias sshathena='ssh sudev_bcs10@192.168.40.99'
+alias sshfoss='ssh webuser@192.168.41.170'
 
 ##systemctl alias
 alias sstatus='systemctl status'
