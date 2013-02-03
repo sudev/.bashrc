@@ -2,8 +2,9 @@
 #inspired from many to use terminal to maximum 
 #
 # ~/.bashrc
-#
-
+#getting a welcome message using fortune-mod and cowsay 
+#install fortune-mod and cowsay for this 
+command cowsay $(fortune)
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
