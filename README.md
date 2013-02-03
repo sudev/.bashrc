@@ -20,9 +20,12 @@ Writing some bash script to make better use of terminal.
 
 Note : 
 > I have a ArchLinux system running with KDE4 so you will require similar kind of stuff to run all these properly.
-> If you are trying to implement this in your terminal make sure that you rename bashrc file to .bashrc and rename the folder bashrcfiles into .bashrcfiles and copy both these files into your home folder.
 
-> Source your new bashrc using the command (make them in efect )
+
+> If you are trying to implement this in your terminal make sure to rename your  bashrc file to .bashrc and rename the folder bashrcfiles into .bashrcfiles and copy both  files into your home folder.
+
+
+> Source your new bashrc using the command 
 
 >>source ~/.bashrc
 
