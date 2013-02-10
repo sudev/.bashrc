@@ -10,7 +10,8 @@ alias ll='ls -l'
 
 #kde4 alias
 alias bscreen='qdbus org.freedesktop.ScreenSaver /ScreenSaver org.freedesktop.ScreenSaver.SetActive True' #lock scree kde --no password asked blanks out the screen no use 
-alias lscreen='/usr/lib/kde4/libexec/kscreenlocker --forcelock'
+alias lscreen='/usr/lib/kde4/libexec/kscreenlocker_greet'
+
 #battery_BAT0
 alias bat='upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep -E "state|time|per"'
 alias batfull='upower -i /org/freedesktop/Upower/devices/battery_BAT0'
@@ -45,3 +46,8 @@ alias sdaemonreload='sudo systemctl --system daemon-reload'
 
 #cd laziness should find a better way to do this 
 alias dev='cd ~/development/'
+
+#best way to pop-up chromium with mostly used stuff 
+alias fb='chromium facebook.com'
+alias gmail='chromium gmail.com'
+alias google='chromium google.com'
