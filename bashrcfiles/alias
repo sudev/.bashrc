@@ -46,7 +46,9 @@ alias sdaemonreload='sudo systemctl --system daemon-reload'
 
 #cd laziness should find a better way to do this 
 alias dev='cd ~/development/'
+alias home='cd ~'
 
+alias sudev='echo "Hai machu "'
 #best way to pop-up chromium with mostly used stuff 
 alias fb='chromium facebook.com'
 alias gmail='chromium gmail.com'
