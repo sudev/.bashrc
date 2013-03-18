@@ -7,3 +7,12 @@ bind '"\e[C": forward-char'
 bind '"\e[D": backward-char'
 set show-all-if-ambiguous on
 set show-all-if-unmodified on
+#Windows like directory walk in bash 
+## Map <Alt + CursorKey> bindings to unused keys, then map
+## the unused keys to functions. (You can also use "cat -A" or
+## "<Ctrl-V><Keys>" to dump the key sequences. There's no
+## builtin termcap in infocmp / tput AFIK.)
+#bind '"\e[1;3A":"\201"' && bind -x '"\201":pushd ..' # Alt Up
+#bind '"\e[1;3C":"\203"' && bind -x '"\203":pushd -0' # Alt Rt
+#bind '"\e[1;3B":"\202"' && bind -x '"\202":popd'     # Alt Dn
+#bind '"\e[1;3D":"\204"' && bind -x '"\204":pushd +1' # Alt Lt
