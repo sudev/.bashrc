@@ -40,3 +40,13 @@ man() {
                 LESS_TERMCAP_us=$(printf "\e[1;32m") \
                 man "$@"
 }
+killer() { 
+    echo "I'm going to kill these process";
+    ps -ef | grep $1 | grep -v grep
+    echo "Can I ? [y]es [n]o ";
+    read ans;
+    if [[ $ans =~ "y" ]] ;
+    then 
+    ps -ef | grep  $1  | grep -v grep | awk '{print $2}' | xargs kill -s TERM 
+    fi 
+}
