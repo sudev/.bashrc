@@ -31,7 +31,7 @@ alias ping8='ping 8.8.8.8'
 alias pingg='ping google.com'
 
 ##ssh alias 
-alias shcloud='ssh root@192.168.41.203'
+alias sshcloud='ssh root@192.168.41.203'
 alias sshathena='ssh sudev_bcs10@192.168.40.99'
 alias sshfoss='ssh webuser@192.168.41.170'
 
@@ -50,6 +50,8 @@ alias home='cd ~'
 #system Power 
 alias 0='sudo shutdown 0'
 
+#remove unwanted empty folder from a given path
+find $1 -type d -empty -delete
 alias sudev='echo "Hai machu "'
 #best way to pop-up chromium with mostly used stuff 
 alias fb='chromium facebook.com'
