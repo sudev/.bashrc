@@ -50,6 +50,11 @@ alias home='cd ~'
 #system Power 
 alias 0='sudo shutdown 0'
 
+
+#Aur aliases 
+aurtar='tar -xzf'
+aurmake='makepkg -s' #the makepkg -s automatically resolves the dependencies using pacman 
+
 #remove unwanted empty folder from a given path
 find $1 -type d -empty -delete
 alias sudev='echo "Hai machu "'
