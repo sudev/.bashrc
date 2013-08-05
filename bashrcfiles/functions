@@ -50,3 +50,9 @@ killer() {
     ps -ef | grep  $1  | grep -v grep | awk '{print $2}' | xargs kill -s TERM 
     fi 
 }
+//a function to search over the home and cd into it 
+//http://sudev.github.io/posts/bashfunction/
+scd() {
+        pathe=$(find ~ -name $1 -type d -print -quit | head -n 1)
+            cd $pathe
+}
