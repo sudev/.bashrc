@@ -40,6 +40,8 @@ man() {
                 LESS_TERMCAP_us=$(printf "\e[1;32m") \
                 man "$@"
 }
+#A didnt knew about the pkill function when I wrote this stuff 
+
 killer() { 
     echo "I'm going to kill these process";
     ps -ef | grep $1 | grep -v grep
@@ -50,8 +52,8 @@ killer() {
     ps -ef | grep  $1  | grep -v grep | awk '{print $2}' | xargs kill -s TERM 
     fi 
 }
-//a function to search over the home and cd into it 
-//http://sudev.github.io/posts/bashfunction/
+#a function to search over the home and cd into it 
+#http://sudev.github.io/posts/bashfunction/
 scd() {
         pathe=$(find ~ -name $1 -type d -print -quit | head -n 1)
             cd $pathe

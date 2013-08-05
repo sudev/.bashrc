@@ -9,10 +9,12 @@ command cowsay $(fortune)
 [[ $- != *i* ]] && return
 
 #Linking other files
-source $HOME/.bashrcfiles/inputrc
-source $HOME/.bashrcfiles/alias
-source $HOME/.bashrcfiles/history
-source $HOME/.bashrcfiles/functions
+# if you use $HOME you wont be able to source these file when you are root 
+
+source /home/sudev/.bashrcfiles/inputrc
+source /home/sudev/.bashrcfiles/alias
+source /home/sudev/.bashrcfiles/history
+source /home/sudev/.bashrcfiles/functions
 
 #PS1='[\u@\h \W]\$ '
 
@@ -27,5 +29,4 @@ complete -cf man
 #PS1='\[\033[0;32m\]\A \[\033[0;31m\]\u\[\033[0;34m\]@\[\033[0;35m\]\h\[\033[0;34m\]:\[\033[00;36m\]\W\[\033[0;33m\] $\[\033[0m\] '
 #PS1='\u\$: \[\033[1;36m\]\w\[\033[0m\]\[\033[0m\]>'
 PS1='\[\e[0;31m\]\u@\h \[\e[m\] \[\e[1;34m\]\w\[\e[m\] \[\e[0;31m\]\$ \[\e[m\]\[\e[0;32m\]\$ '
-PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND ; }"'echo `dt` `pwd` $$ $USER \
-               "$(history 1)" >> ~/.bash_eternal_history'
+PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND ; }"'echo `date` `pwd` $$ $USER "$(history 1)" >> ~/.bash_eternal_history'
