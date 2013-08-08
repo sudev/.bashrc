@@ -7,7 +7,8 @@
 command cowsay $(fortune)
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
-
+#added to avoid unessary fingerprint-gui messages 
+xhost + >/dev/null
 #Linking other files
 # if you use $HOME you wont be able to source these file when you are root 
 
