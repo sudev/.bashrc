@@ -12,10 +12,10 @@ xhost + >/dev/null
 #Linking other files
 # if you use $HOME you wont be able to source these file when you are root 
 
-source /home/sudev/.bashrcfiles/inputrc
-source /home/sudev/.bashrcfiles/alias
-source /home/sudev/.bashrcfiles/history
-source /home/sudev/.bashrcfiles/functions
+source ~/.bashrcfiles/inputrc
+source ~/.bashrcfiles/alias
+source ~/.bashrcfiles/history
+source ~/.bashrcfiles/functions
 
 #PS1='[\u@\h \W]\$ '
 
