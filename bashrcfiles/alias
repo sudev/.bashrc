@@ -1,3 +1,4 @@
+#!/bin/bash -xv
 #Author Sudev Ambadi 
 alias ls='ls --color=auto'
 #alias search display 
@@ -17,14 +18,25 @@ alias bat='upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep -E "sta
 alias batfull='upower -i /org/freedesktop/Upower/devices/battery_BAT0'
 
 ###package manager
-#install form server 
-alias install='sudo pacman -S'
-#install from file 
-alias installfile='sudo pacman -U'
-#search for packages 
-alias searchpac='sudo pacman -Ss'
-#install using yaourt 
-alias instally='sudo yaourt -S'
+case $(uname -a) in 
+*ARCH*)
+#Arch Specific
+	alias install='sudo pacman -S'
+	#install from file 
+	alias installfile='sudo pacman -U'
+	#search for packages 
+	alias searchpac='sudo pacman -Ss'
+	#install using yaourt 
+	alias instally='sudo yaourt -S'
+;;
+*buntu*)
+	alias apti='sudo apt-get install'
+	alias aptr='sudo apt-get remove'
+	alias aptp='sudo apt-get purge'
+	alias aptud='sudo apt-get update'
+	alias aptug='sudo apt-get dist-upgrade'
+;;
+esac
 
 ##Network 
 alias ping8='ping 8.8.8.8'
