@@ -1,0 +1,76 @@
+#!/bin/bash -xv
+#Author Sudev Ambadi 
+alias ls='ls --color=auto'
+#alias search display 
+alias showalias='cat ~/.bashrcfiles/alias'
+alias searchalias='cat ~/.bashrcfiles/alias | grep'
+
+#list ls
+alias la='ls -a'
+alias ll='ls -l'
+
+#kde4 alias
+alias bscreen='qdbus org.freedesktop.ScreenSaver /ScreenSaver org.freedesktop.ScreenSaver.SetActive True' #lock scree kde --no password asked blanks out the screen no use 
+alias lscreen='/usr/lib/kde4/libexec/kscreenlocker_greet'
+
+#battery_BAT0
+alias bat='upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep -E "state|time|per"'
+alias batfull='upower -i /org/freedesktop/Upower/devices/battery_BAT0'
+
+###package manager
+case $(uname -a) in 
+*ARCH*)
+#Arch Specific
+	alias install='sudo pacman -S'
+	#install from file 
+	alias installfile='sudo pacman -U'
+	#search for packages 
+	alias searchpac='sudo pacman -Ss'
+	#install using yaourt 
+	alias instally='sudo yaourt -S'
+;;
+*buntu*)
+	alias apti='sudo apt-get install'
+	alias aptr='sudo apt-get remove'
+	alias aptp='sudo apt-get purge'
+	alias aptud='sudo apt-get update'
+	alias aptug='sudo apt-get dist-upgrade'
+;;
+esac
+
+##Network 
+alias ping8='ping 8.8.8.8'
+alias pingg='ping google.com'
+
+##ssh alias 
+alias sshcloud='ssh root@192.168.41.203'
+alias sshathena='ssh sudev_bcs10@192.168.40.99'
+alias sshfoss='ssh webuser@192.168.41.170'
+
+##systemctl alias
+alias sstatus='systemctl status'
+alias sstart='sudo systemctl start'
+alias sstop='sudo systemctl stop'
+alias senable='sudo systemctl enable'
+alias sdisable='sudo systemctl disable'
+alias sreload='sudo systemctl reload'
+alias sdaemonreload='sudo systemctl --system daemon-reload'
+
+#cd laziness should find a better way to do this 
+alias dev='cd ~/development/'
+alias home='cd ~'
+#system Power 
+alias 0='sudo shutdown 0'
+
+
+#Aur aliases 
+aurtar='tar -xzf'
+aurmake='makepkg -s' #the makepkg -s automatically resolves the dependencies using pacman 
+
+#remove unwanted empty folder from a given path
+find $1 -type d -empty -delete
+alias sudev='echo "Hai machu "'
+#best way to pop-up chromium with mostly used stuff 
+alias fb='chromium facebook.com'
+alias gmail='chromium gmail.com'
+alias google='chromium google.com'
