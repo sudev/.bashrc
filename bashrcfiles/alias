@@ -4,7 +4,8 @@ alias ls='ls --color=auto'
 #alias search display 
 alias showalias='cat ~/.bashrcfiles/alias'
 alias searchalias='cat ~/.bashrcfiles/alias | grep'
-
+#jekyl path 
+export PATH="/home/sudev/.gem/ruby/2.0.0/bin:$PATH"
 #list ls
 alias la='ls -a'
 alias ll='ls -l'
@@ -37,6 +38,11 @@ case $(uname -a) in
 	alias aptug='sudo apt-get dist-upgrade'
 ;;
 esac
+
+
+##implementing the power aliases: suspend and hibernate cant find them in the gnome gui 
+alias powersuspend='su  - -c "echo mem > /sys/power/state"'
+alias powerhibernate='su  - -c "echo disk > /sys/power/state"'
 
 ##Network 
 alias ping8='ping 8.8.8.8'
