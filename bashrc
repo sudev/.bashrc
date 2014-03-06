@@ -9,9 +9,14 @@ command cowsay $(fortune)
 [[ $- != *i* ]] && return
 #added to avoid unessary fingerprint-gui messages 
 xhost + >/dev/null
+
+#Exports for wine 
+export WINEPREFIX=.wine
+export WINEARCH="win32"
 #Linking other files
 # if you use $HOME you wont be able to source these file when you are root 
-
+PATH="${PATH}:/opt/android-sdk/tools/:/opt/android-sdk/platform-tools/:~/.gem/ruby/2.1.0/bin"
+export PATH=~/bin:$PATH
 source ~/.bashrcfiles/inputrc
 source ~/.bashrcfiles/alias
 source ~/.bashrcfiles/history

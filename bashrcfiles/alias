@@ -22,8 +22,8 @@ alias batfull='upower -i /org/freedesktop/Upower/devices/battery_BAT0'
 case $(uname -a) in 
 *ARCH*)
 #Arch Specific
-	alias install='sudo pacman -S'
-	#install from file 
+	alias install='sudo pacman --needed -S'
+	#install from file --needed to avoid possible reinstall
 	alias installfile='sudo pacman -U'
 	#search for packages 
 	alias searchpac='sudo pacman -Ss'
@@ -39,6 +39,8 @@ case $(uname -a) in
 ;;
 esac
 
+##Minix mount 
+alias minix='mount -t vbfs -o share=NAME none /mnt'
 
 ##implementing the power aliases: suspend and hibernate cant find them in the gnome gui 
 alias powersuspend='su  - -c "echo mem > /sys/power/state"'
