@@ -54,7 +54,7 @@ alias pingg='ping google.com'
 alias sshcloud='ssh root@192.168.41.203'
 alias sshathena='ssh sudev_bcs10@192.168.40.99'
 alias sshfoss='ssh webuser@192.168.41.170'
-
+alias sshtunnel='nohup ssh -D 1468 zeus@192.168.41.230'
 ##systemctl alias
 alias sstatus='systemctl status'
 alias sstart='sudo systemctl start'
@@ -72,9 +72,11 @@ alias 0='sudo shutdown 0'
 
 
 #Aur aliases 
-aurtar='tar -xzf'
-aurmake='makepkg -s' #the makepkg -s automatically resolves the dependencies using pacman 
+alias aurtar='tar -xzf'
+alias aurmake='makepkg -s' #the makepkg -s automatically resolves the dependencies using pacman 
 
+#Using clear too much 
+alias c='clear'
 #remove unwanted empty folder from a given path
 find $1 -type d -empty -delete
 alias sudev='echo "Hai machu "'
